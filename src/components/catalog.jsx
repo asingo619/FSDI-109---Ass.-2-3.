@@ -10,9 +10,9 @@ const Catalog = () => {
   let [categories, setCategories] = useState([]);
 
   // logic(fns)
-  const retrieveCatalog = () => {
+  const retrieveCatalog = async () => {
     let service = new ItemService();
-    let cat = service.getCatalog();
+    let cat = await service.getCatalog();
     setProducts(cat);
     setFilterDisplay(cat);
     console.log(cat);
