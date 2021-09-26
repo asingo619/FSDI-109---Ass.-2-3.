@@ -21,5 +21,5 @@ const ItemsOnCart = (props) => {
         </div>
     );
 };
- 
+//  GIT TEST
 export default ItemsOnCart;
